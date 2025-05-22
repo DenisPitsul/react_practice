@@ -35,7 +35,7 @@ export const Filters = ({
           <a
             key={own}
             data-cy="FilterUser"
-            href={`#/${own}`}
+            href="#/"
             className={cn({ 'is-active': own === owner })}
             onClick={() => onOwnerSelect(own)}
           >
@@ -91,7 +91,7 @@ export const Filters = ({
             className={cn('button', 'mr-2', 'my-1', {
               'is-info': selectedCategories.includes(category),
             })}
-            href={`#/${category}`}
+            href="#/"
             onClick={() => onCategoryClick(category)}
           >
             {category}
